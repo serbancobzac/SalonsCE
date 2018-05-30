@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SalonCE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/ulg/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid" id="header">
+    <div class="row no-gutters align-items-center">
+        <div class="col-lg-2">
+            <img class="img-fluid mx-auto d-block" src="resources/logo.png">
+        </div>
+        <div class="col-lg-2">
+            <h4><b>Paris</b></h4>
+            <h4>18, 19, 20 SEPT 2018</h4>
+            <h6>porte de versailles</h6>
+        </div>
+        <div class="col-lg-8">
+            <nav class="navbar navbar-expand-lg bg-white justify-content-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="row no-gutters nav">
+                        <li class="col nav-item">
+                            <i class="fas fa-home"></i>
+                            <a class="nav-link" href="#">ACCUEIL</a>
+                        </li>
+                        <li class="col nav-item">
+                            <i class="fas fa-id-card"></i>
+                            <a class="nav-link" href="#">TELECHARGER MON BADGE</a>
+                        </li>
+                        <li class="col nav-item">
+                            <i class="fas fa-users"></i>
+                            <a class="nav-link" href="#">
+                                EXPOSANTS <br>
+                                Prendre rendez-vous
+                            </a>
+                        </li>
+                        <li class="col nav-item">
+                            <i class="fas fa-microphone-alt"></i>
+                            <a class="nav-link" href="#">CONFERENCES <br> S'inscrire</a>
+                        </li>
+                        <li class="col nav-item">
+                            <i class="fas fa-star"></i>
+                            <a class="nav-link" href="#">INFOS PRATIQUES <br> Voyage, hebergement...</a>
+                        </li>
+                        <li class="col nav-item">
+                            <i class="far fa-calendar-alt"></i>
+                            <a class="nav-link" href="#">MES SALONS</a>
+                        </li>
+                        <li class="col nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-power-off"></i> Me deconecter</a>
+                            <a class="nav-link" href="#"><i class="far fa-window-maximize"></i> Salonsce.com</a>
+                        </li>
+                    </ul>
+                </div>  
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" id="row-background" style="margin-top:30px">
+    <div class="row">
+        <div class="col-lg-12 headline">
+            <h2>MON CE</h2>
+            <h5>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit...</h5>
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col-lg-10 content-box">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h2>MON BUREAU</h2>
+                </div>
+                <div class="col-lg-9">
+                    <h4><b>GERER LES MEMBRES</b></h4>
+                    <h5>Je renesigne mon profil, telecharge mon badge et inscris mes collegues. Le badge est utilisable sur l'ensemble des SalonCE FranceCE</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>NOM</th>
+                                <th>PRENOM</th>
+                                <th>FONCTION</th>
+                                <th>TELECHARGER LES BADGES</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                                <td><i class="fas fa-download"></i>TELECHARGER</td>
+                            </tr>
+                            <tr>
+                                <td>Mary</td>
+                                <td>Moe</td>
+                                <td>mary@example.com</td>
+                                <td><i class="fas fa-download"></i>TELECHARGER</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>Dooley</td>
+                                <td>july@example.com</td>
+                                <td><i class="fas fa-download"></i>TELECHARGER</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn" id="telecharger-badges">TELECHARGER TOUS LES BADGES</button>
+                </div>
+                <div class="col-lg-4" id="ajouter-membres">
+                    <div class="row">
+                        <div class="col-lg-4" id="left-side">
+                            <i class="fas fa-user-check"></i>
+                            <h4>AJOUTER DES MEMBRES</h4>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-plus-circle"></i> First item</a>
+                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-plus-circle"></i> Second item</a>
+                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-plus-circle"></i> Third item</a>
+                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-plus-circle"></i> Third item</a>
+                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-plus-circle"></i> Third item</a>
+                                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-plus-circle"></i> Third item</a>
+                            </div>
+                            <button type="button" class="btn">AJOUTER UN MEMBRE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>EXCLU' SALONSCE PARIS:</h3>
+            <h3>LA CSE BOX!</h3>
+        </div>
+        <div class="col-lg-6">
+            <p>
+                C'est  dsa d s d asd as d as  fds ad as d sa d as d a s das
+                as dsa d sad as d sa d as d as d a d as das d  asd as
+                asdasdasd asd as das as dasdas dasdas d asdas d as das as
+                asdasdas das da sd asew reggyuuikdh w wr rth rst ear gqaer
+            </p>
+            <button type="button" class="btn">JE COMMANDE MA CSE BOX</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-10">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="far fa-id-badge"></i>
+                    <h3>Les informations du ce/CSE</h3>
+                    <h6>je complete et mets a jour les informrations de mon ce?ces</h6>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <h4>carte d'identite</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>dsadasda</h5>
+                            <h5>dsadasda</h5>
+                            <h5>dsadasda</h5>
+                            <h5>dsadasda</h5>
+                            <h5>dsadasda</h5>
+                            <h5>dsadasda</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5><b>dsadasda</b></h5>
+                            <h5><b>dsadasda</b></h5>
+                            <h5><b>dsadasda</b></h5>
+                            <h5><b>dsadasda</b></h5>
+                            <h5><b>dsadasda</b></h5>
+                            <h5><b>dsadasda</b></h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>dsadasda</h5>
+                            <h5>dsadasda</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5><b>dsadasda</b></h5>
+                            <h5><b>dsadasda</b></h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>dsadasda</h5>
+                            <h5>dsadasda</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5><b>dsadasda</b></h5>
+                            <h5><b>dsadasda</b></h5>
+                        </div>
+                    </div>
+                    <button type="button" class="btn">MODIFIER</button>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4>centre d'interet</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <ul class="list-group">
+                                <li class="list-group-item"><i class="fas fa-circle"></i> First item</li>
+                                <li class="list-group-item"><i class="fas fa-circle"></i> Second item</li>
+                                <li class="list-group-item"><i class="fas fa-circle"></i> Third item</li>
+                                <li class="list-group-item"><i class="fas fa-circle"></i> Third item</li>
+                                <li class="list-group-item"><i class="fas fa-circle"></i> Third item</li>
+                                <li class="list-group-item"><i class="fas fa-circle"></i> Third item</li>
+                            </ul>
+                            <button type="button" class="btn">MODIFIER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2">
+            <h4>publiciate</h4>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <img class="img-fluid mx-auto d-block" src="resources/logo-comexpo.png">
+            </div>
+            <div class="col-lg-3">
+                <img class="img-fluid mx-auto d-block" src="resources/logos-salonsce-francece.png">
+            </div>
+            <div class="col-lg-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">First item</a>
+                    <a href="#" class="list-group-item list-group-item-action">Second item</a>
+                    <a href="#" class="list-group-item list-group-item-action">Third item</a>
+                    <a href="#" class="list-group-item list-group-item-action">Third item</a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="row">
+                    <div class="col-lg-4"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                    <div class="col-lg-4"><a href="#"><i class="fab fa-twitter"></i></a></div>
+                    <div class="col-lg-4"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
