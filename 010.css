@@ -1,0 +1,96 @@
+@font-face {
+    font-family: font-bold;
+    src: url(./font/Brandon_blk.otf);
+}
+
+@font-face {
+    font-family: font-light;
+    src: url(./font/BrandonGrotesque-Medium_0.otf);
+}
+
+@font-face {
+    font-family: font-thin;
+    src: url(./font/Brandon_thin.otf);
+}
+
+@font-face {
+    font-family: font-ultra-thin;
+    src: url(./font/Brandon_light.otf);
+}
+
+body{    
+    background-image: url("./resources/background-2.png");
+    background-size: cover;
+}
+textarea, input, select, option { outline: none; }
+
+.header{
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.popup{
+
+    width: 50vw;
+    background-color: #fff;
+    z-index: 200;
+    margin: 10vh auto;  
+    font-family: font-ultra-thin;  
+}
+
+.popup-content{
+    margin: 0 auto;
+    
+    width: 60%;
+}
+
+.popup .popup-title{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 35px;
+    margin-bottom: 10px;
+    font-family: font-bold;
+    color: #05223b;
+    padding: 20px;
+}
+
+.popup .input-title{
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: font-light;
+}
+.popup .select{
+    
+    background-color: #E7EAED;
+    border: 1px solid #E5E5E7;
+    width: 100%;
+    padding: 3px;
+    height: 30px;
+}
+
+.popup .option{
+    background-color: #E7EAED;
+    f
+}
+
+.popup .button{
+
+    background-color: #05223b;
+    color: #fff;
+    font-family: font-bold;
+    padding: 5px 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 20px auto;
+    cursor: pointer;
+    border: none;
+}
+
+
+@media(max-width: 800px){
+   .popup{
+       width: 80%;
+   }
+}

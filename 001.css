@@ -1,0 +1,271 @@
+@font-face {
+    font-family: font-bold;
+    src: url(./font/Brandon_blk.otf);
+}
+
+@font-face {
+    font-family: font-light;
+    src: url(./font/BrandonGrotesque-Medium_0.otf);
+}
+
+@font-face {
+    font-family: font-thin;
+    src: url(./font/Brandon_thin.otf);
+}
+
+body{
+    
+    background-image: url("./resources/background-2.png");
+    background-size: cover;
+}
+
+
+.header{
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.header .header-logo{
+    
+}
+
+.content{
+    /* height: 500px; */
+    /* padding: 20px 0; */
+}
+
+
+
+.content-box{
+    margin: 30px;
+    background-color: #fff;
+    border: 2px solid #4A7096;
+}
+
+
+.content-box .left-side{
+    border-right: 3px solid #C9C5BF;
+    color: #416383;
+    margin: 10px 0;
+}
+
+.content-box .left-side .title{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 35px;
+    margin-bottom: 10px;
+    font-family: font-bold;
+}
+
+.content-box .left-side .left-side-content{
+
+        padding: 10px 80px;
+}
+
+.content-box .left-side .text{
+    font-family: font-light;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content-box .left-side .small-box{
+    font-family: font-light;
+    padding: 10px;
+    background-color: #F2F2F0;
+    margin-bottom: 20px;
+}
+
+ ul{
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.content-box .left-side .small-box .small-box-title{
+    
+    font-family: font-light;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.content-box .left-side .advert-box{
+    
+    border: 10px solid #E8E4E1;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.content-box .left-side .advert-box .advertisment{
+
+    width: 100%;
+    bottom: -13px;
+    position: absolute;
+    font-size: 10px;
+    color: #000000;
+    text-align: center;
+
+}
+
+
+.content-box .left-side .header-icon{
+
+    color: #F9A218;
+    font-size: 45px;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.content-box .right-side{
+    color: #183454;
+    margin: 10px 0;
+}
+
+.content-box .right-side-content{
+    margin: 10px 30px;
+}
+
+.content-box .right-side .title{
+
+    border-bottom: 1px solid #B5BBC1;
+    text-transform: uppercase;
+    font-family: font-bold;
+
+}
+
+.content-box .right-side .month-title{
+
+    border-bottom: 2px solid #A9BFD0;
+    font-family: font-light;
+    font-weight: bold;
+}
+
+.content-box .right-side .row.title, .row.months{
+    margin-top: 30px;
+}
+
+.content-box .right-side .events{
+    padding-left: 0px;
+}
+
+
+.content-box .right-side .events .event-title{
+
+    text-transform: uppercase;
+    font-family: font-light;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+li{
+    cursor: pointer;
+}
+
+.content-box .right-side .events .event-title .far.fa-circle{
+
+    font-size: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+.content-box .right-side .events .event-title .fas.fa-circle.checked{
+
+
+    font-size: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    
+}
+
+
+.content-box .right-side .events .event{
+    margin-top: 30px;
+    font-family: font-thin;
+    font-weight: bold;
+    
+}
+
+.content-box .right-side .events .event li{
+    margin-bottom: 10px;
+}
+
+.content-box .right-side .events .event-subtitle{
+    margin-left: 20px;
+}
+
+.content-box .right-side .button{
+
+    background-color: #12263D;
+    color: #fff;
+    font-family: font-bold;
+    padding: 5px 40px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.content-box .right-side .button:hover{
+
+    background-color: #e9ecef;
+    color:  #12263D;
+    
+}
+
+
+@media(max-width: 800px){
+    .content-box .left-side{
+        border-right: none;
+    }
+}
+
+@media(max-width: 500px){
+
+    .content-box{
+        margin: 0;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .row.header{
+    }
+
+    .content-box .left-side .left-side-content {
+        padding: 10px 20px;
+    }  
+    
+    .social-media .col-lg-4{
+        margin-top: 20px;
+        width: 33%;
+    }
+}
+
+
+
+
+#footer .list-group-item {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+}
+    #footer .list-group-item a {
+        color: #9c9c9c;
+        text-decoration: none;
+    }
+    #footer .list-group-item a:hover {
+        color: #418f9b;
+    }
+
+#footer .fab {
+    color: #418f9b;
+}
